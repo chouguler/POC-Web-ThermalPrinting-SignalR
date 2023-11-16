@@ -1,0 +1,30 @@
+<div class="content" role="main">
+    <h2 style="text-align: center; color: blue;">.NET Thin client (SignalR) POC</h2>
+    <div class="row">
+        <div>            
+            <!-- Tracking Number from Scanner -->
+            <div class="card highlight-card card-small">
+                <span>SCANNER - ASP.NET SignalR Thin Client</span>
+            </div>
+            <h2>Tracking Number:</h2>
+            <span><input type="text" id="trackingNumber" [(ngModel)]="trackingNumber"
+               name="" style="width: 400px;"></span>           
+        </div>
+        <div>
+            <div class="spacer"><br></div>
+            <!-- Print to Serial Port Printer -->
+            <div class="card highlight-card card-small" style="background-color: #1976d2;">
+                <span>Thermal Printer - ASP.NET SignalR Thin Client</span>
+            </div>
+            <h2>Enter Label string: </h2>
+            <span><textarea id="labelData" name="" [(ngModel)]="labelData" cols="100"
+                    style="height: 100px;"></textarea></span>
+            <div>
+                <button name="printViaSerial" id="printViaSerial">Print via Serial</button> &nbsp;
+                <button name="printViaUSB" id="printViaUSB">Print via USB</button>                
+            </div>
+            <div>Response: <span style="color: red;" id="response"></span></div>
+            <div class="spacer"><br></div>
+        </div>
+    </div>
+</div>
